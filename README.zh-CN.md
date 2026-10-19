@@ -37,10 +37,7 @@ DSH 的工具调用都跑在沙箱里（PowerShell、读写文件、MCP……）
 需要带原生右侧栏（`@deepseek-ai/dsh-client-ui-sidebar-right`）的 DSH Web，已在 **0.2.0-rc.2** 上验证。
 
 ```bash
-# npm（推荐）
-dsh plugin --profile web add dsh-sandbox-monitor
-
-# 直接从 GitHub 安装
+# 推荐
 dsh plugin --profile web add wuming295/dsh-sandbox-monitor
 
 # 或使用 release 压缩包
@@ -48,6 +45,8 @@ dsh plugin --profile web add https://github.com/wuming295/dsh-sandbox-monitor/re
 ```
 
 把 `web` 换成你的 profile 名（例如 `desktop`），然后刷新浏览器。
+
+> npm 发布计划中；在此之前请用上面的 GitHub / release 方式安装。
 
 ### 从源码 / 不使用插件管理器
 
