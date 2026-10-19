@@ -1,0 +1,4 @@
+# DSH profile patch for dsh-sandbox-monitor.
+# Applied after the bundle layer when the package is enabled in a profile.
+- id: sandbox-monitor
+  name: dsh-sandbox-monitor
