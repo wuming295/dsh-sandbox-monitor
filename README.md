@@ -37,7 +37,7 @@ Requires a DSH build with the native right sidebar (`@deepseek-ai/dsh-client-ui-
 
 ```bash
 # recommended
-dsh plugin --profile web add wuming295/dsh-sandbox-monitor
+dsh plugin --profile web add github:wuming295/dsh-sandbox-monitor
 
 # or a release tarball
 dsh plugin --profile web add https://github.com/wuming295/dsh-sandbox-monitor/releases/download/v0.1.0/dsh-sandbox-monitor-0.1.0.tgz

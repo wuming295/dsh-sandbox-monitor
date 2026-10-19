@@ -38,7 +38,7 @@ DSH 的工具调用都跑在沙箱里（PowerShell、读写文件、MCP……）
 
 ```bash
 # 推荐
-dsh plugin --profile web add wuming295/dsh-sandbox-monitor
+dsh plugin --profile web add github:wuming295/dsh-sandbox-monitor
 
 # 或使用 release 压缩包
 dsh plugin --profile web add https://github.com/wuming295/dsh-sandbox-monitor/releases/download/v0.1.0/dsh-sandbox-monitor-0.1.0.tgz
