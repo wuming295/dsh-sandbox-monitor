@@ -1,0 +1,16 @@
+name: docs-sync
+on: push
+permissions: {contents: write}
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sed -i 's#add wuming295/dsh-sandbox-monitor#add github:wuming295/dsh-sandbox-monitor#g' README.md README.zh-CN.md
+          git diff --quiet && exit 0
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md README.zh-CN.md
+          git commit -m docs-sync
+          git push
