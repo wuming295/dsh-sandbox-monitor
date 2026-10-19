@@ -36,10 +36,7 @@ DSH runs tools inside a sandbox (PowerShell, file reads/writes, MCP calls, …).
 Requires a DSH build with the native right sidebar (`@deepseek-ai/dsh-client-ui-sidebar-right`), tested on **0.2.0-rc.2**.
 
 ```bash
-# npm (recommended)
-dsh plugin --profile web add dsh-sandbox-monitor
-
-# straight from GitHub
+# recommended
 dsh plugin --profile web add wuming295/dsh-sandbox-monitor
 
 # or a release tarball
@@ -47,6 +44,8 @@ dsh plugin --profile web add https://github.com/wuming295/dsh-sandbox-monitor/re
 ```
 
 Replace `web` with your profile name (e.g. `desktop`), then refresh the browser.
+
+> An npm release is planned; until then install from GitHub or the release tarball above.
 
 ### From source / without the plugin manager
 
